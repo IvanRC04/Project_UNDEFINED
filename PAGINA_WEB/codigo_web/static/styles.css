@@ -1,0 +1,260 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Contenedor principal centrado en la pantalla */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;
+    font-family: "Poppins", sans-serif; 
+}
+
+/* Tarjeta con bordes curvos y sombra */
+.card {
+  display: flex;
+  background-color: #000000;
+  color: white;
+  padding: 1rem 1.8rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+.card select, ::picker(select){
+  appearance: base-select;
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.card::after, .card::before {
+  --angle: 0deg; 
+  content: "";
+  position: absolute;
+  height: 80vh;
+  width:80vw;
+  background-image: conic-gradient(from var(--angle), transparent 70%, #7f02cc, #4a23cc);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding:1.6rem 2.4rem;
+  border-radius: 35px;
+  animation: 3s spin linear infinite;
+}
+
+.card::before {
+    filter: blur(1.5rem);
+    opacity: 50%;
+}
+
+/* Estilos para el formulario dentro de la tarjeta */
+.card h1 {
+  display:block;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 0.2em;
+  font-size:5rem;
+  margin-top: 1rem
+}
+
+::picker(select) {
+  margin-right: 0.3rem;
+  background-color: black;
+  border: 2px solid #7f02cc;
+  border-radius: 8px;
+  color: #7f02cc;
+  font-family: "poppins", sans-serif;
+}
+
+.card select{
+  display: flex;
+  max-width: 300px;
+  width: 40vw;
+  height:80%;
+  outline: none;
+  padding-left: 20px;
+  padding: 1rem;
+  color: #7f02cc;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 2rem;
+  box-sizing: border-box;
+  background-color: #7f02cc1F;
+  font-family: "poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.card select::picker-icon {
+  display:block;
+  margin-right: 0.3rem;
+  color: #7f02cc;
+}
+
+.card option::checkmark{
+  display: none;
+}
+
+.select-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25%;
+  max-height: 100px;
+  height: 30%;
+}
+
+.card .threed-container {
+  display: block;
+  background-color: #7f02cc1F;
+  border-radius: 40px;
+  margin: auto;
+  width: 100%;
+  height: 30vh;
+}
+
+model-viewer {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  border-radius: 40px;
+}
+
+.card input {
+  display: block;
+  margin:auto;
+  width: 80%;
+  max-height: 100px;
+  height: 25%;
+  padding: 0.7rem 1.2rem;
+  border: 0.2em solid white;
+  border-radius: 50px;
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: white;
+}
+
+.card input::placeholder {
+  color: white;
+  opacity: 0.6; /* Cambia la opacidad del placeholder */
+}
+
+.card input:focus {
+  background-color: #000000;
+  color: white;
+  outline: none;
+}
+
+.card button {
+  display: block;
+  font-weight: bold;
+  letter-spacing: 0.5em;
+  height: 7vh;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+  font-size: 300%;
+  font-family: "poppins", sans-serif;
+  background-color: #7f02cc1F;
+  color: #7f02cc;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.card .qr-buttons {
+  font-weight: bold;
+  letter-spacing: normal;
+  font-size: 2.3rem; /* Usa rem para escalabilidad */
+  height: auto;
+  padding: 0.75rem 1.5rem;
+  width: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 40px;
+  background-color: #7f02cc1F;
+  color: #7f02cc;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+
+.visor{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 46vh;
+  width: 100%;
+  margin: auto;
+}
+
+.form-part{
+  height: 37vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.qr-button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+         
+.qr-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+.qr-img {
+  display: none;
+  width: 60vw;      
+  max-width: 300px;
+  height: auto;       
+  aspect-ratio: 1;    
+  margin-top: 1.5rem;
+  object-fit: contain;
+}

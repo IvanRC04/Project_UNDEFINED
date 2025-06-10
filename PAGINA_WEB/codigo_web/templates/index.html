@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>UNDEFINED</title>
+  <!-- MQTT.js vía CDN -->
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  <!-- Script JS -->
+  <script src="../static/script.js" defer></script>
+  <!-- Model Viewer -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+
+  <div class="card">
+    <!-- FORMULARIO -->
+    <div class="form-part">
+      <h1>UNDEFINED</h1>
+      <form id="pedidoForm">
+        <input id="nombre" name="nombre" type="text" placeholder="Nombre y Apellidos">
+        <input id="dni" name="dni" type="text" placeholder="DNI(99999999Z)">
+        <div class="select-group">        
+          <select name="talla" id="talla" required>
+            <option value="" disabled selected>Talla</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+          </select>
+
+          <select name="color" id="color" required>
+            <option value="" disabled selected>Color</option>
+            <option value="Rojo">Rojo</option>
+            <option value="Azul">Azul</option>
+            <option value="Verde">Verde</option>
+            <option value="Negro">Negro</option>
+            <option value="Blanco">Blanco</option>
+            <option value="Rosa">Rosa</option>
+            <option value="Amarillo">Amarillo</option>
+            <option value="Morado">Morado</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+  <!-- MODELO Y BOTÓN ENVIAR -->
+<div class="visor">
+  <div class="threed-container">
+    <model-viewer id="croc-viewer"
+      alt="Mi modelo 3D" 
+      src="../static/images/Crocs-Gris.glb"
+      ar environment-image="../static/images/lakeside_night_1k.hdr"
+      camera-controls 
+      shadow-intensity="1">
+    </model-viewer>
+  </div>
+  <button type="button" id="sendBtn"><span>ENVIAR</span></button>
+</div>
+
+<!-- BOTONES QR + IMÁGENES -->
+<div class="qr-button-group">
+  <div class="qr-item">
+    <button type="button" id="btnCompra" class="qr-buttons">COMPRA</button>
+    <button type="button" id="btnDevolucion" class="qr-buttons">DEVOLUCIÓN</button>
+  </div>
+  <img id="qrCompra" src="" alt="QR Compra" class="qr-img">
+  <img id="qrDevolucion" src="" alt="QR Devolución" class="qr-img">
+</div>
+
+
+
+</body>
+</html>

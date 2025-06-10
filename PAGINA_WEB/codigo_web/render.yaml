@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: Autopizza_web
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app

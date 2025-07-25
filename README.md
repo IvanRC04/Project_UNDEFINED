@@ -50,6 +50,8 @@ Los usuarios:
 3️⃣ Ven cómo el robot (simulado en RoboDK) procesa su pedido  
 4️⃣ Reciben sus Crocs listos para despegar 🚀
 
+>[!IMPORTANT]
+>En la foto del stan se puede ver.
 ---
 
 ## **Experiencia Espacial en VR**

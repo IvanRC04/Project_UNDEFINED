@@ -63,9 +63,8 @@ Mientras su pedido se prepara, los clientes pueden:
 
 >[!WARNING]
 >Las fotos que se muestran a continuación, son en la fase de edición, no es la experiencia que tendría un usuario.
-
->[!TIP]
->En caso de querer ver la experiencia, no son necesarias unas gafas VR, aunque mejora mucho con estas. Puedes simular desde Unreal Engine.
+>
+>Además, debido al peso y cantidad de carpetas, se hace imposible proporcionar el archivo de Unreal.
 
 <img width="817" height="479" alt="Captura de pantalla 2025-07-25 121449" src="https://github.com/user-attachments/assets/1d073828-aadd-4f98-b41e-a59104b9b40b" />
 

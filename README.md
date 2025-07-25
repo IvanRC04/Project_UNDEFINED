@@ -51,7 +51,7 @@ Los usuarios:
 4️⃣ Reciben sus Crocs listos para despegar 🚀
 
 >[!IMPORTANT]
->En la foto del stan se puede ver.
+>En la foto del stan al final del documento se puede ver.
 ---
 
 ## **Experiencia Espacial en VR**

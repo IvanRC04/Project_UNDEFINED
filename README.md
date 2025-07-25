@@ -2,6 +2,14 @@
 
 > *Una experiencia inmersiva que une robótica, IoT, realidad virtual y fabricación digital.*
 
+![IMG-20250610-WA0012](https://github.com/user-attachments/assets/9169b094-645b-4a34-be59-4d3bc9a83e14)
+
+>[!NOTE]
+>Vista frontal del almacén robotizado
+
+>[!IMPORTANT]
+>Aunque no se aprecie, en la planta, se coordinan más de 30 mecanismos mediante hilos y la API de ROBODK en python
+
 ---
 
 ## **¿Qué es _UNDEFINED_?**

@@ -18,6 +18,15 @@
 El cliente hace su pedido desde nuestra **web mobile-only**, recibe un **QR** y activa la máquina expendedora **IoT**.  
 Mientras, puede sumergirse en una cápsula espacial interactiva 🪐 para ver a los operarios virtuales trabajando y previsualizar sus Crocs personalizados con **pines 3D**.
 
+<img width="667" height="889" alt="Captura de pantalla 2025-07-25 115601" src="https://github.com/user-attachments/assets/7266b340-7241-4fb4-b969-e6c7280c92f6" />
+
+>[!NOTE]
+>Cartel de la deria del proyecto
+
+>[!WARNING]
+>La parte pixelada corresponde con los integrantes del proyecto
+
+
 ---
 
 ## **Tecnologías Integradas**
@@ -50,6 +59,8 @@ Mientras su pedido se prepara, los clientes pueden:
 - Ver a los **operarios digitales** trabajando en la planta
 - Personalizar y previsualizar los Crocs con sus pines
 
+>[!IMPORTANT]
+>Por motivos de privacidad, no se pueden subir vídeos de la experiencia de los usuarios
 ---
 
 ## **Objetivo**
